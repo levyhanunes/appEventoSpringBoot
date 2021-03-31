@@ -20,9 +20,13 @@
                 <p>Local: <span th:text="${evento.local}"></span></p>
                 <p>Data: <span th:text="${evento.data}"></span></p>
                 <p>Horário: <span th:text="${evento.horario}"></span></p>
-
             </div>
 
+            <form method="post">
+                Nome: <input value="" name="nomeConvidado" type="text" />
+                RG: <input value="" name="rg" type="text" />
+                <button type="submit" class="waves-effect waves-light btn">Adicionar</button>
+            </form>
         </div>
 
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
